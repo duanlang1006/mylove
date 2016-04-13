@@ -131,8 +131,7 @@
         var f, e, j;
         b = b && b[0] ? b[0].ownerDocument || b[0] : s;
         if (a.length === 1 && typeof a[0] === "string" && a[0].length < 512 && b === s && !ta.test(a[0]) && (c.support.checkClone || !ua.test(a[0]))) {
-            e =
-                true;
+            e = true;
             if (j = c.fragments[a[0]])
                 if (j !== 1) f = j
         }
@@ -217,8 +216,7 @@
                 this.selector = a;
                 this.context = s;
                 a = s.getElementsByTagName(a);
-                return c.merge(this,
-                    a)
+                return c.merge(this, a)
             } else return !b || b.jquery ? (b || T).find(a) : c(b).find(a);
             else if (c.isFunction(a)) return T.ready(a);
             if (a.selector !== w) {
